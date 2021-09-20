@@ -37,3 +37,15 @@ const users = {
     id: 1,
     name: "Lacie"
 };
+let cid = 1;
+let customerID = cid;
+let cid2 = 1;
+let customerID2 = cid2;
+const addnumbers = (x, y) => {
+    return x + y;
+};
+console.log(addnumbers(1, 2));
+const log = (msg) => {
+    console.log(msg);
+};
+log(`Hello ${1}`);
