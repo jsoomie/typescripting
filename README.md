@@ -1,0 +1,2 @@
+# typescripting
+Learning typescript 
