@@ -93,3 +93,11 @@ class Employee extends OtherPerson {
 }
 const james = new Employee(3, "James", 27, true, "Developer");
 console.log(james.register());
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4, 5]);
+let strArray = getArray(["Bobby", "Bella", "Jamie", "Jeff", "Robert"]);
+numArray.push(1);
+strArray.push("Mana");
+console.log(numArray, strArray);

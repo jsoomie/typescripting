@@ -199,3 +199,17 @@ class Employee extends OtherPerson {
 
 const james = new Employee(3, "James", 27, true, "Developer");
 console.log(james.register());
+
+// GENERICS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Used as a plceholder '<T>' to keep functions reuseable. Where the T is to have the types but explicitly told when using the function
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items)
+}
+
+let numArray = getArray<number>([1, 2, 3, 4, 5]);
+let strArray = getArray<string>(["Bobby", "Bella", "Jamie", "Jeff", "Robert"]);
+
+numArray.push(1);
+strArray.push("Mana");
+
+console.log(numArray, strArray)
